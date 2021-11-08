@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 
 namespace GradeBook
@@ -16,19 +17,46 @@ namespace GradeBook
             book.AddGrade(9);
             book.AddGrade(0.9);
 
-            // book.ShowStats();
+            var looping = true;
 
-            double[] numbers = { 1.2, 4.5, 5.5 };
-            List<double> grades = new List<double> { 3.4, 5.5, 6.7, 8.9, 9, .9 };
+            while (looping)
+            {
+                Console.Write("New Grade: ");
+                var input = Console.ReadLine();
 
-            if (args.Length > 0)
-            {
-                Console.WriteLine("Hello Test!" + args[0] + "!");
+                try
+                {
+                    if (input != null)
+                    {
+                        double number1;
+                        if (double.TryParse(input, out number1))
+                        {
+                            book.AddGrade(double.Parse(input));
+                        }
+                        else
+                        {
+                            if (new List<char> { 'A', 'B', 'C', 'D', 'F' }.Contains(char.Parse(input)))
+                            {
+                                book.AddLetterGrade(char.Parse(input));
+                            }
+                            else
+                            {
+                                looping = false;
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
             }
-            else
-            {
-                Console.WriteLine("Hello!");
-            }
+
+            var stats = book.GetStats();
+            Console.WriteLine($"The average grade is {stats.Average:N1}");
+            Console.WriteLine($"The highest grade is {stats.High:N1}");
+            Console.WriteLine($"The lowest grade is {stats.Low:N1}");
+            Console.WriteLine($"The letter grade is {stats.Letter}");
         }
     }
 }
