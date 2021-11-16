@@ -10,6 +10,8 @@ namespace GradeBook
         static void Main(string[] args)
         {
             Book book = new Book("test");
+            book.GradeAdded += OnGradeAdded;
+            
             book.AddGrade(3.4);
             book.AddGrade(5.5);
             book.AddGrade(6.7);
@@ -37,7 +39,7 @@ namespace GradeBook
                         {
                             if (new List<char> { 'A', 'B', 'C', 'D', 'F' }.Contains(char.Parse(input)))
                             {
-                                book.AddLetterGrade(char.Parse(input));
+                                book.AddGrade(char.Parse(input));
                             }
                             else
                             {
@@ -57,6 +59,11 @@ namespace GradeBook
             Console.WriteLine($"The highest grade is {stats.High:N1}");
             Console.WriteLine($"The lowest grade is {stats.Low:N1}");
             Console.WriteLine($"The letter grade is {stats.Letter}");
+        }
+        
+        static void OnGradeAdded(object sender, EventArgs e)
+        {
+            Console.WriteLine("A grade was added");
         }
     }
 }
