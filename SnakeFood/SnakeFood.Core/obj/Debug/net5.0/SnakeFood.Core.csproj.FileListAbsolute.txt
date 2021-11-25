@@ -1,0 +1,12 @@
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\bin\Debug\net5.0\SnakeFood.Core.deps.json
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\bin\Debug\net5.0\SnakeFood.Core.dll
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\bin\Debug\net5.0\ref\SnakeFood.Core.dll
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\bin\Debug\net5.0\SnakeFood.Core.pdb
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\SnakeFood.Core.csproj.AssemblyReference.cache
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\SnakeFood.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\SnakeFood.Core.AssemblyInfoInputs.cache
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\SnakeFood.Core.AssemblyInfo.cs
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\SnakeFood.Core.csproj.CoreCompileInputs.cache
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\SnakeFood.Core.dll
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\ref\SnakeFood.Core.dll
+C:\Git\Pluralsight\SnakeFood\SnakeFood.Core\obj\Debug\net5.0\SnakeFood.Core.pdb

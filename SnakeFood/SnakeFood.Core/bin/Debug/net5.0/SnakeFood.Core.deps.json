@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SnakeFood.Core/1.0.0": {
+        "runtime": {
+          "SnakeFood.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SnakeFood.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

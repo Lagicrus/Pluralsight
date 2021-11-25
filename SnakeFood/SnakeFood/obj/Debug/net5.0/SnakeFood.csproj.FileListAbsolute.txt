@@ -39,3 +39,7 @@ C:\Git\Pluralsight\SnakeFood\SnakeFood\obj\Debug\net5.0\SnakeFood.pdb
 C:\Git\Pluralsight\SnakeFood\SnakeFood\obj\Debug\net5.0\SnakeFood.genruntimeconfig.cache
 C:\Git\Pluralsight\SnakeFood\SnakeFood\obj\Debug\net5.0\SnakeFood.csproj.CopyComplete
 C:\Git\Pluralsight\SnakeFood\SnakeFood\obj\Debug\net5.0\Razor\Pages\Restaurants\List.cshtml.g.cs
+C:\Git\Pluralsight\SnakeFood\SnakeFood\bin\Debug\net5.0\SnakeFood.Core.dll
+C:\Git\Pluralsight\SnakeFood\SnakeFood\bin\Debug\net5.0\SnakeFood.Data.dll
+C:\Git\Pluralsight\SnakeFood\SnakeFood\bin\Debug\net5.0\SnakeFood.Data.pdb
+C:\Git\Pluralsight\SnakeFood\SnakeFood\bin\Debug\net5.0\SnakeFood.Core.pdb

@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "SnakeFood.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SnakeFood.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SnakeFood.Core.dll": {}
+        }
+      },
+      "SnakeFood.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SnakeFood.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SnakeFood.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SnakeFood.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SnakeFood.Core/1.0.0": {
+      "type": "project",
+      "path": "../SnakeFood.Core/SnakeFood.Core.csproj",
+      "msbuildProject": "../SnakeFood.Core/SnakeFood.Core.csproj"
+    },
+    "SnakeFood.Data/1.0.0": {
+      "type": "project",
+      "path": "../SnakeFood.Data/SnakeFood.Data.csproj",
+      "msbuildProject": "../SnakeFood.Data/SnakeFood.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "SnakeFood.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\SamR\\.nuget\\packages\\": {},
@@ -45,7 +82,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Git\\Pluralsight\\SnakeFood\\SnakeFood.Data\\SnakeFood.Data.csproj": {
+              "projectPath": "C:\\Git\\Pluralsight\\SnakeFood\\SnakeFood.Data\\SnakeFood.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

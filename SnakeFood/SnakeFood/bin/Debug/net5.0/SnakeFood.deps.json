@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "SnakeFood/1.0.0": {
         "dependencies": {
+          "SnakeFood.Data": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -322,6 +323,25 @@
         },
         "compile": {
           "SnakeFood.dll": {}
+        }
+      },
+      "SnakeFood.Core/1.0.0": {
+        "runtime": {
+          "SnakeFood.Core.dll": {}
+        },
+        "compile": {
+          "SnakeFood.Core.dll": {}
+        }
+      },
+      "SnakeFood.Data/1.0.0": {
+        "dependencies": {
+          "SnakeFood.Core": "1.0.0"
+        },
+        "runtime": {
+          "SnakeFood.Data.dll": {}
+        },
+        "compile": {
+          "SnakeFood.Data.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2026,6 +2046,16 @@
   },
   "libraries": {
     "SnakeFood/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SnakeFood.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SnakeFood.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

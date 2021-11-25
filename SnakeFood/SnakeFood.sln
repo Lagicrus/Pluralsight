@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeFood", "SnakeFood\SnakeFood.csproj", "{DED607F6-38D6-4CA6-87A5-C5EDBC9C6A3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeFood.Core", "SnakeFood.Core\SnakeFood.Core.csproj", "{869D83E2-9A9A-455B-887B-ABA966C8733C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeFood.Data", "SnakeFood.Data\SnakeFood.Data.csproj", "{95A13430-6D03-421F-B58C-07CE5506705D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{DED607F6-38D6-4CA6-87A5-C5EDBC9C6A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED607F6-38D6-4CA6-87A5-C5EDBC9C6A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DED607F6-38D6-4CA6-87A5-C5EDBC9C6A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{869D83E2-9A9A-455B-887B-ABA966C8733C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869D83E2-9A9A-455B-887B-ABA966C8733C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869D83E2-9A9A-455B-887B-ABA966C8733C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869D83E2-9A9A-455B-887B-ABA966C8733C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A13430-6D03-421F-B58C-07CE5506705D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A13430-6D03-421F-B58C-07CE5506705D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A13430-6D03-421F-B58C-07CE5506705D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A13430-6D03-421F-B58C-07CE5506705D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
