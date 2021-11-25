@@ -5,12 +5,49 @@ using System.Linq;
 namespace GradeBook
 {
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
-    public class Book
+
+    public class NamedObject
+    {
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        Statistics GetStats();
+        string Name { get; }
+        event GradeAddedDelegate GradeAdded;
+    }
+
+    public abstract class Book : NamedObject, IBook
+    {
+        protected Book(string name) : base(name)
+        {
+        }
+
+        public virtual event GradeAddedDelegate GradeAdded;
+        public abstract void AddGrade(double grade);
+
+        public virtual Statistics GetStats()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    public class InMemoryBook : Book
     {
         private List<double> grades;
         private string name;
         
-        public Book(string name)
+        public InMemoryBook(string name) : base(name)
         {
             grades = new List<double>();
             this.name = name;
@@ -41,7 +78,7 @@ namespace GradeBook
             }
         }
 
-        public void AddGrade(double grade)
+        public override void AddGrade(double grade)
         {
             if (grade <= 100 && grade >= 0)
             {
@@ -57,9 +94,9 @@ namespace GradeBook
             }
         }
         
-        public event GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate GradeAdded;
 
-        public Statistics GetStats()
+        public override Statistics GetStats()
         {
             Statistics result = new Statistics();
             result.Average = 0.0;
@@ -95,12 +132,6 @@ namespace GradeBook
             }
 
             return result;
-        }
-
-        public string Name
-        {
-            get; 
-            set;
         }
 
         private readonly string category = "Science";

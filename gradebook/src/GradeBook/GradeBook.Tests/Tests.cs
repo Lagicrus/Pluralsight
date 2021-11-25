@@ -9,7 +9,7 @@ namespace GradeBook.Tests
         public void BookCalculatesAnAverageGrade()
         {
             // arrange
-            var book = new Book("");
+            var book = new InMemoryBook("");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.3);
@@ -26,22 +26,22 @@ namespace GradeBook.Tests
         [Fact]
         public void NumbersMaxAt100()
         {
-            Book book = new Book("");
-            book.AddGrade(105);
-            book.AddGrade(100);
-            var stats = book.GetStats();
+            InMemoryBook inMemoryBook = new InMemoryBook("");
+            inMemoryBook.AddGrade(105);
+            inMemoryBook.AddGrade(100);
+            var stats = inMemoryBook.GetStats();
             Assert.Equal(stats.High, 100);
         }
         
         [Fact]
         public void Test1()
         {
-            Book book = new Book("");
-            book.AddGrade(89.1);
-            book.AddGrade(90.5);
-            book.AddGrade(77.3);
+            InMemoryBook inMemoryBook = new InMemoryBook("");
+            inMemoryBook.AddGrade(89.1);
+            inMemoryBook.AddGrade(90.5);
+            inMemoryBook.AddGrade(77.3);
             
-            var results = book.GetStats();
+            var results = inMemoryBook.GetStats();
 
             Assert.Equal(85.6, results.Average);
             Assert.Equal(90.5, results.High);
